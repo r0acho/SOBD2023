@@ -12,5 +12,7 @@ services:
       - NB_UID=3107
       - CHOWN_HOME=yes
       - CHOWN_HOME_OPTS=-R
+      - SPARK_DRIVER_MEMORY=8g 
+      - SPARK_EXECUTOR_MEMORY=8g  
     volumes:
       - "./:/home/user/work"
